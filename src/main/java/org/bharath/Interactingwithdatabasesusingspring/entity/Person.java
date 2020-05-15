@@ -55,8 +55,8 @@ public class Person
 
 	@Override
 	public String toString() {
-		return "\n PersonJdbcDao [id=" + id + ", name=" + name + ", location=" + location + ", birthDate=" + birthDate
-				+ "]";
+		return "PersonJdbcDao [id=" + id + ", name=" + name + ", location=" + location + ", birthDate=" + birthDate
+				+ "] \n";
 	}
 	
 }

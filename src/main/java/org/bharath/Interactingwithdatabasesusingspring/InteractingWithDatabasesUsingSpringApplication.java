@@ -23,6 +23,7 @@ public class InteractingWithDatabasesUsingSpringApplication implements CommandLi
 	@Override
 	public void run(String... args) throws Exception {
 		logger.info("All persons details -> {} ",personDao.findAllPersons());
+		logger.info("Getting details of a single person -> {} ",personDao.findPersonById(10001));
 	}
 
 }
