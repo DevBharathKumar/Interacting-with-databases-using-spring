@@ -24,6 +24,7 @@ public class InteractingWithDatabasesUsingSpringApplication implements CommandLi
 	public void run(String... args) throws Exception {
 		logger.info("All persons details -> {} ",personDao.findAllPersons());
 		logger.info("Getting details of a single person -> {} ",personDao.findPersonById(10001));
+		logger.info("No of person affected by the delete -> {} ",personDao.deletePersonById(10002));
 	}
 
 }
