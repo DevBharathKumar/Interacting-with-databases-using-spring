@@ -3,10 +3,10 @@ create table person
 	id integer not null,
 	name varchar(255) not null,
 	location varchar(255),
-	date_birth timestamp,
+	birth_date timestamp,
 	primary key(id)
 );
 
-insert into person (id,name,location,date_birth) values (10001,'Bharath Kumar','Chengalpattu',sysdate());
-insert into person (id,name,location,date_birth) values (10002,'Reethi','Potheri',sysdate());
-insert into person (id,name,location,date_birth) values (10003,'Abdul','Pallavaram',sysdate());
+insert into person (id,name,location,birth_date) values (10001,'Bharath Kumar','Chengalpattu',sysdate());
+insert into person (id,name,location,birth_date) values (10002,'Reethi','Potheri',sysdate());
+insert into person (id,name,location,birth_date) values (10003,'Abdul','Pallavaram',sysdate());
