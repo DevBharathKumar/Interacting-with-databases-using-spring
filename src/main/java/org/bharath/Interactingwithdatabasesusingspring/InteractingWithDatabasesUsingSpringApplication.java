@@ -11,7 +11,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//Commenting it out because we are using spring jpa to perform the operations 
+//@SpringBootApplication
 public class InteractingWithDatabasesUsingSpringApplication implements CommandLineRunner{
 
 	@Autowired
