@@ -12,8 +12,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//Commenting it out because we are using spring data jpa to perform the operations
-//@SpringBootApplication
+@SpringBootApplication
 public class InteractingWithDatabasesUsingSpringJpa implements CommandLineRunner{
 
 	@Autowired

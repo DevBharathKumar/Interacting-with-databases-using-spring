@@ -11,7 +11,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+//Commenting this to make the application to use H2 database 
+//@SpringBootApplication
 public class MigeratingFromH2DatabaseToMySQLDatabase implements CommandLineRunner
 {
 	@Autowired
