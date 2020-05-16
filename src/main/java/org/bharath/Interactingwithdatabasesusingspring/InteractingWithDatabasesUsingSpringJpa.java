@@ -35,9 +35,9 @@ public class InteractingWithDatabasesUsingSpringJpa implements CommandLineRunner
 		logger.info("Updating user 10003 -> {} ",
 				repository.updatePerson(new Person(10003,"Abdul","Zamin Pallavaram",new Date())));
 
-		/*logger.info("All persons details -> {} ",personDao.findAllPersons());
+		repository.deletePersonById(10002);
 		
-		logger.info("No of person affected by the delete -> {} ",personDao.deletePersonById(10002));
+		/*logger.info("All persons details -> {} ",personDao.findAllPersons());
 		
 		*/
 	}
