@@ -37,9 +37,8 @@ public class InteractingWithDatabasesUsingSpringJpa implements CommandLineRunner
 
 		repository.deletePersonById(10002);
 		
-		/*logger.info("All persons details -> {} ",personDao.findAllPersons());
+		logger.info("All persons details -> {} ",repository.findAllPersons());
 		
-		*/
 	}
 
 }

@@ -1,7 +1,10 @@
 package org.bharath.Interactingwithdatabasesusingspring.jpa;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 import org.bharath.Interactingwithdatabasesusingspring.entity.Person;
@@ -34,4 +37,11 @@ public class PersonJpaRepository
 		Person person = findPersonById(id);
 		entityManager.remove(person);
 	}
+	
+	public List<Person> findAllPersons()
+	{
+		TypedQuery<Person> result =  entityManager.createNamedQuery("get_all_persons", Person.class);
+		return result.getResultList();
+	}
+	
 }
