@@ -18,4 +18,14 @@ public class PersonJpaRepository
 	{
 		return entityManager.find(Person.class, id);
 	}
+	
+	public Person insertPerson(Person person)
+	{
+		return entityManager.merge(person);
+	}
+	
+	public Person updatePerson(Person person)
+	{
+		return entityManager.merge(person);
+	}
 }

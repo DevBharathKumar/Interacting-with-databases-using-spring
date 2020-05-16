@@ -1,5 +1,9 @@
 package org.bharath.Interactingwithdatabasesusingspring;
 
+
+import java.util.Date;
+
+import org.bharath.Interactingwithdatabasesusingspring.entity.Person;
 import org.bharath.Interactingwithdatabasesusingspring.jpa.PersonJpaRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,16 +28,18 @@ public class InteractingWithDatabasesUsingSpringJpa implements CommandLineRunner
 	public void run(String... args) throws Exception {
 		
 		logger.info("Getting details of a single person -> {} ",repository.findPersonById(10003));
+		
+		logger.info("Inserting one person -> {} ",
+				repository.insertPerson(new Person("Abi", "Vandalur", new Date())));
+		
+		logger.info("Updating user 10003 -> {} ",
+				repository.updatePerson(new Person(10003,"Abdul","Zamin Pallavaram",new Date())));
 
 		/*logger.info("All persons details -> {} ",personDao.findAllPersons());
 		
 		logger.info("No of person affected by the delete -> {} ",personDao.deletePersonById(10002));
 		
-		logger.info("Inserting one person -> {} ",
-				personDao.insertPerson(new Person(10004, "Abi", "Vandalur", new Date())));
-		
-		logger.info("Updating user 10003 -> {} ",
-				personDao.updatePerson(new Person(10003,"Abdul","Zamin Pallavaram",new Date())));*/
+		*/
 	}
 
 }
